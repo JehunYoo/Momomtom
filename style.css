@@ -1,0 +1,94 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  /* background-color: #ecf0f1; */
+  background-color: #2c3e50;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  margin-top: 5vh;
+}
+header {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.js-weather {
+  color: gainsboro;
+}
+.js-title {
+  /* color: #34495e; */
+  color: whitesmoke;
+  font-size: 75px;
+  animation: fadeIn 0.5s linear;
+}
+.form {
+  margin-bottom: 5vh;
+}
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+}
+input {
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  width: 25vw;
+  height: 5vh;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  animation: fadeIn 0.5s linear;
+}
+input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+li {
+  color: whitesmoke;
+  font-size: 25px;
+  animation: fadeIn 0.5s linear;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+button:active {
+  opacity: 0.5;
+}
+.js-greetings {
+  color: white;
+  font-size: 30px;
+  animation: fadeIn 0.5s linear;
+}
+ul {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
